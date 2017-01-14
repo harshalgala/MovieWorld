@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MovieWorld_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="wrapper">
+         <div class="menu""> 
+             <ul>
+            <li><a href="menu.html">Home</a></li>
+            <li><a>Movies</a></li>
+            <li><a>Plays</a></li>
+			<li><a>Offers</a></li>
+			<li><a>Contact Us</a></li>
+            <li><a>Sign In</a></li>
+         </ul>
+         </div>
+     </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
